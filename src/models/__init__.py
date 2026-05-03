@@ -1,0 +1,10 @@
+# FathomNet 2025 Model Architectures
+from .model_multiscale import MultiScaleTaxonomyClassifier
+from .model_multiscale_taxloss import MultiScaleTaxonomicClassifier
+from .model_multiscale_attention import MultiScaleCrossAttentionClassifier
+from .model_multiscale_attention_taxloss import MultiScaleAttentionTaxonomicClassifier
+from .model import TaxonomyAwareClassifier
+from .model_simple import SimpleTaxonomyClassifier
+from .hierarchy_fusion import HierarchyAwareFusion, GatedCrossScaleFusion
+from .attention_module import PatchSelfAttention, PatchSelfAttentionPooling, PartBasedAttention
+from .dinov2_backbone import DINOv2Backbone, create_dinov2_backbone

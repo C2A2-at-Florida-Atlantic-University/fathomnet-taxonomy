@@ -1,0 +1,32 @@
+# Datasets (download separately via data/download.py)
+/train/
+/test/
+/train_full/
+/external_val/
+
+# Outputs (regenerated during training/inference)
+/outputs/
+*.ckpt
+*.npz
+submission*.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+.Python
+build/
+dist/
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

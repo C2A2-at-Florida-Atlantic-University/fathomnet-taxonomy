@@ -1,0 +1,14 @@
+# External FathomNet validation set with all 4 scales
+# 5,802 annotations, 70 taxa, independent from competition data
+
+project:
+  name: "external-validation-4scale"
+
+data:
+  batch_size: 16
+  scales: ["1x", "3x", "5x", "full"]
+
+paths:
+  test_coco_json: "./external_val/dataset_external.json"
+  test_rois_dir: "./external_val/rois"
+  test_roi_root: "./external_val/rois"

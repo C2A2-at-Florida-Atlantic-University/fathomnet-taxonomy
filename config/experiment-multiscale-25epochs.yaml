@@ -1,0 +1,15 @@
+# 25-epoch multiscale experiment (no early stopping)
+# Only specify values that differ from defaults in src/config.py
+
+project:
+  name: "convnext-multiscale-25epochs"
+
+data:
+  batch_size: 16
+
+training:
+  max_epochs: 25
+  early_stopping_patience: 999  # Effectively disabled
+
+callbacks:
+  early_stopping_patience: 999

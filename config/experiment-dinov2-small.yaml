@@ -1,0 +1,12 @@
+# DINOv2-Small experiment configuration
+# Lightweight ViT-S/14 backbone (384-dim, ~22M params/scale)
+
+project:
+  name: "dinov2-small-multiscale"
+
+model:
+  backbone: "dinov2_small"
+
+data:
+  batch_size: 24
+  scales: ["1x", "3x", "5x"]

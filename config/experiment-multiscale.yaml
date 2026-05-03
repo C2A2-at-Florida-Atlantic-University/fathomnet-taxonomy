@@ -1,0 +1,9 @@
+# Multi-scale experiment configuration
+# Only specify values that differ from defaults in src/config.py
+
+project:
+  name: "convnext-multiscale"
+
+data:
+  batch_size: 16
+  scales: ["1x", "3x", "5x"]

@@ -1,0 +1,12 @@
+# Config for running inference on the external FathomNet validation set
+project:
+  name: "external-validation"
+
+data:
+  batch_size: 16
+  scales: ["1x", "3x", "5x"]
+
+paths:
+  test_coco_json: "./external_val/dataset_external.json"
+  test_rois_dir: "./external_val/rois"
+  test_roi_root: "./external_val/rois"
