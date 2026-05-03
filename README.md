@@ -14,6 +14,10 @@ The framework aligns the training loss, inference rule, and ensemble strategy wi
 2. **Taxonomy-aware loss.** A weighted cross-entropy across all seven heads plus an expected tree-distance penalty on the species head (α = 0.3): `L = (Σ_ℓ w_ℓ · CE_ℓ) / Σ w_ℓ + α · Σ_i p_i · D_{i, y}`.
 3. **Minimum-risk inference.** A 10-fold ensemble averages species softmaxes; the prediction selects `argmin_i Σ_j p_j · D_{i,j}` — the Bayes-optimal decision under the tree-path cost.
 
+![Architecture](docs/architecture.png)
+
+*End-to-end pipeline: four ROI scales → independent DINOv2-Base ViT-B/14 backbones → CLS-token concatenation → 2048-dim fused embedding → seven per-rank heads. Trained with the taxonomy-aware loss; decoded with minimum-risk inference over a 10-fold ensemble. Vector version: [`docs/architecture.pdf`](docs/architecture.pdf).*
+
 ## Repository layout
 
 ```
