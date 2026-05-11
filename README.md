@@ -6,7 +6,7 @@ Reference implementation for:
 > "Taxonomy-aware deep learning for hierarchical marine species classification in underwater imagery,"
 > in *Proc. SPIE 14030, Machine Learning from Challenging Data 2026* (Defense + Commercial Sensing), 2026.
 
-The framework aligns the training loss, inference rule, and ensemble strategy with the FathomNet 2025 tree-path-distance metric. On the FathomNet 2025 benchmark it achieves a mean tree-path distance of **1.581**, within 3% of the 1st-place solution.
+The framework aligns the training loss, inference rule, and ensemble strategy with the FathomNet 2025 tree-path-distance metric. On the FathomNet 2025 public test set it achieves a mean tree-path distance of **1.581**, within 3% of the 1st-place solution.
 
 ## Method (in three components)
 
